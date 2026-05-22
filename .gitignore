@@ -19,6 +19,8 @@ cypress/screenshots/
 # Blocks downloads folder used during file download test scripts
 cypress/downloads/
 
+cypress/support/DataGenerator
+
 # ====================================================================
 # Test Reports & Visual Dashboards (Generated fresh on run)
 # ====================================================================

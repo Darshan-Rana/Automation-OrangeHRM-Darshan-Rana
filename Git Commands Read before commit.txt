@@ -1,0 +1,50 @@
+===================================================================
+DAILY WORKFLOW: SAVING & PUSHING CHANGES
+===================================================================
+
+1. Check what files you have modified or created:
+   git status
+
+2. Stage all your changes (prepare them to be saved):
+   git add .
+
+3. Save your staged changes locally with a descriptive message:
+   git commit -m "feat: add user registration test using Faker data"
+
+4. Upload your local commits to your live GitHub repository:
+   git push
+
+
+===================================================================
+BRANCH MANAGEMENT: WORKING SAFELY
+===================================================================
+
+1. See what branch you are currently working on:
+   git branch
+
+2. Create a brand new branch and switch to it instantly:
+   git checkout -b feature/login-page-tests
+
+3. Switch back to your existing main branch:
+   git checkout main
+
+4. Merge a completed feature branch into your main branch:
+   (Make sure you are on 'main' first, then run:)
+   git merge feature/login-page-tests
+
+
+===================================================================
+SYNCING & UNDOING: EMERGENCY COMMANDS
+===================================================================
+
+1. Download the latest updates from GitHub if working on a new machine:
+   git pull origin main
+
+2. Undo your last commit but KEEP all your written code safe:
+   git reset --soft HEAD~1
+
+3. Discard local changes in a file completely (revert to last commit):
+   git checkout -- filename.js
+
+4. Completely clear out untracked files or folders quickly:
+   git clean -fd
