@@ -1,0 +1,28 @@
+{
+  "name": "cypressautomationtesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:Order": "npx cypress run --headless --browser firefox --spec 'cypress/e2e/PBPCascadeV2/Masters/ShelfLocation.cy.js,cypress/e2e/PBPCascadeV2/Masters/CustomerControl.cy.js,cypress/e2e/PBPCascadeV2/Masters/BaggingLocation.cy.js,cypress/e2e/PBPCascadeV2/Masters/Incomplate Location.cy.js,cypress/e2e/PBPCascadeV2/Masters/ProductControl.cy.js'",
+    "generate:data": "node cypress/support/DataGenerator/generate_all_data.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.4",
+    "cypress-file-upload": "^5.0.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "cypress": "^15.15.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "moment": "^2.30.1"
+  }
+}

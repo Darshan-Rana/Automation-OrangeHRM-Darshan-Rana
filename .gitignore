@@ -1,3 +1,53 @@
+# ====================================================================
+# Dependency Directories
+# ====================================================================
+node_modules/
+jspm_packages/
+web_modules/
+
+# ====================================================================
+# Cypress Execution Artifacts & Media
+# ====================================================================
+# Blocks local video folders in both root and nested subdirectories
+cypress/videos/
+**/videos/*.mp4
+
+# Blocks local screenshot captures on failures
+cypress/screenshots/
+**/screenshots/
+
+# Blocks downloads folder used during file download test scripts
+cypress/downloads/
+
+# ====================================================================
+# Test Reports & Visual Dashboards (Generated fresh on run)
+# ====================================================================
+# Blocks your local local mochawesome execution dashboard folders
+cypress/reports/
+mochawesome-report/
+.nyc_output/
+coverage/
+
+# ====================================================================
+# Environment & Configuration Overrides
+# ====================================================================
+# Keeps local credentials, testing tokens, or target URLs secret
+.env
+.env.local
+.env.*.local
+
+# ====================================================================
+# IDE & System Garbage
+# ====================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+Thumbs.db
+.DS_Store
 # Logs
 logs
 *.log

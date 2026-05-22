@@ -1,0 +1,30 @@
+name: Cypress Test Website
+
+on: push
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-24.04
+    steps:
+      # 1. CHECKOUT: Get your repository code onto the runner
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      # 2. INSTALL DEPENDENCIES: Install Node.js dependencies
+      #    This step is essential to find the lockfile and install packages.
+      - name: Install Dependencies
+        run: npm install
+
+      # 3. CYPRESS RUN: Execute your tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6 
+        with:
+          spec: 'cypress/e2e/Demo Site/GitDemoSite.spec.cy.js'
+          # NOTE: The 'cypress-io/github-action' can sometimes handle the install 
+          # but adding a dedicated 'npm install' step is clearer and more reliable.
+      - name : Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+         name: My Reports
+         path: cypress/reports/html
