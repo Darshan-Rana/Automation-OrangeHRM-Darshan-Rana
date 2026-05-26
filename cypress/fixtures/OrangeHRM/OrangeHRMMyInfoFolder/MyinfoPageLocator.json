@@ -1,0 +1,137 @@
+{
+  
+  "Profile" : ".employee-image",
+
+    "MyInfoPageContents" : {
+           
+       "sectionheader": {
+            
+          "Locator" : "h6.orangehrm-main-title",
+              "Labels" : {
+                  
+                  "PersonalDetails" : "Personal Details",
+                  "CustomFields" : "Custom Fields",
+                  "Attachments" : "Attachments"
+            }
+        },
+        
+        "PersonalDetails" : {
+             
+            "Locator" : "label[data-v-30ff22b1]",
+              "Labels" : {
+                  
+                  "EmployeeFullName" : "Employee Full Name",
+                  "EmployeeId" : "Employee Id",
+                  "OtherId" : "Other Id",
+                  "DriversLicenseNumber" : "Driver's License Number",
+                  "LicenseExpiryDate" : "License Expiry Date",
+                  "Nationality" : "Nationality",
+                  "MaritalStatus" : "Marital Status",
+                  "DateofBirth" : "Date of Birth",
+                  "Gender" : "Gender"
+            },
+
+            "FieldsLocators" : {
+                
+                 "EmployeeName" : {
+                      "FullFieldLocator" : ".--name-grouped-field",
+                      "FirstName" : ".--name-grouped-field .orangehrm-firstname",
+                      "MiddleName" : ".--name-grouped-field .orangehrm-middlename",
+                      "LastName" : ".--name-grouped-field .orangehrm-lastname"
+                   },
+
+                 "IDSection" : {
+                    "formFieldWrapper": ".oxd-input-group",
+                     "inputField": "input",
+                     "Headerdropdown": ".oxd-select",
+                     "Dropdown" : ".oxd-select-dropdown",
+                     "DropdownText" : ".oxd-select-text-input"
+                 },
+
+                 "RadioButton" : {
+                    "SectionValue" : ".oxd-radio-wrapper",
+                    "Radio" : "input[type='radio']"
+                 },
+
+                 "SaveButton" : ".oxd-form-actions button",
+                 "Success" : "#oxd-toaster_1"
+            }
+        },
+
+        "CustomeFields" : {
+             
+            "Locator" : "label[data-v-30ff22b1]",
+              "Labels" : {
+                  
+                  "BloodType" : "Blood Type",
+                  "Test_Field" : "Test_Field"
+            },
+
+            "Dropdown": {
+                 
+                "MainValue" : ".oxd-input-group",
+                "Dropdowntext" : ".oxd-select-text-input",
+                "List" : ".oxd-select-dropdown"
+            },
+
+            "InputField" : {
+                 
+                "Field" : ".oxd-input-group",
+                "TextInput" : ".oxd-input"
+            },
+
+            "SaveButton" : ".oxd-form-actions button",
+            "Success" : "#oxd-toaster_1"
+        },
+
+        "Attachments" : {
+            
+            "Section" : ".orangehrm-attachment",
+            "AddButton" : ".oxd-button",
+            "IncermentalValue" :".oxd-text--span",
+            "Labels" : ".oxd-input-group__label-wrapper",
+              "Values" : {
+                  "SelectFile" : "Select File",
+                  "Comment" : "Comment"
+                },
+            
+            "UploadFile" : {
+                 "Locator" : ".oxd-grid-item",
+                 "File" : "input[type='file']",
+                 "Error" : ".oxd-text"
+            },
+            
+            "Comment" : "textarea[placeholder='Type comment here']",
+            "CancelButton" : "button[type='button']",
+            "SubmitButton" : "button[type='submit']",
+            "Success" : "#oxd-toaster_1",
+            "Checking" : {
+
+                  "TitleLocator" : ".orangehrm-main-title",
+                  "TitleAfter" : "Add Attachment",
+                  "TitleBefore" : "Attachments"
+            },
+
+            "Table" : { 
+
+                 "WholeTable" : ".oxd-table",
+                 "Header" : ".oxd-table-header",
+                 "body" : ".oxd-table-body",
+                 "Rows" : ".oxd-table-row",
+                 "cells" : ".oxd-table-cell",
+
+                   "TableHeader" : {
+                      "FileName":"File Name",
+                      "Description" : "Description",
+                      "Size" : "Size",
+                      "Type" : "Type",
+                      "DateAdded" : "Date Added",
+                      "AddedBy" : "Added By",
+                      "Actions" : "Actions"
+                }
+            }
+        }
+ 
+    }
+}
+ 

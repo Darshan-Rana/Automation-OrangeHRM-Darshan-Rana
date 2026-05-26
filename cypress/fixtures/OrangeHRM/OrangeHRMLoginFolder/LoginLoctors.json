@@ -1,0 +1,25 @@
+{
+   "FieldVerification" : {
+        "CompanyLogo" : "[alt='company-branding']",
+        "ScreenTitle" : "h5.orangehrm-login-title",
+        "ScreenFields": ".oxd-label",
+        "FieldErrorMessage" : ".oxd-input-field-error-message"
+    },
+     
+    "Alert" : {
+        "AlertSection" : ".oxd-alert-content",
+        "AlertContainer" : ".oxd-alert-content p"
+    },
+
+    "Values" : {
+        "URL" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+        "FieldNames" : ["Username", "Password"]
+    },
+    
+    "Username" : "input[name='username']",
+    "Password" : "input[name='password']",
+    "Submitbutton" : "button[type='submit']",
+
+    "ErrorMessage" : "Required",
+    "AlertMessage" : "Invalid credentials"
+}

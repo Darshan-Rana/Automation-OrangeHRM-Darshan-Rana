@@ -1,0 +1,24 @@
+{
+  
+ "SidePanelTitle" : ".oxd-sidepanel-header",
+
+    "sidePanel" : {
+       
+        "Locator" : ".oxd-main-menu-item",
+        "SearchField" : ".oxd-main-menu-search",
+       
+        "Options" : {
+            "Admin" : "Admin",
+            "PIM" : "PIM",
+            "Leave" : "Leave",
+            "Time" : "Time",
+            "Recruitment" : "Recruitment",
+            "MyInfo" : "My Info",
+            "Performance" : "Performance",
+            "Dashboard" : "Dashboard",
+            "Directory" : "Directory",
+            "Maintenance" : "Maintenance",
+            "Buzz" : "Buzz"
+        } 
+    }
+}
