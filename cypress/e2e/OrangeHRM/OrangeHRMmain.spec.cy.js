@@ -125,7 +125,7 @@ let DynamicUserData;
 
     xit('TC13 : Verify the Add Attachment section Upload File functionality with large file', function(){
 
-        const FilePath = 'C:/Automation/cypress/TestFiles/2mb.pdf';
+        const FilePath = 'cypress/fixtures/TestFiles/2mb.pdf';
 
          loginPage.Login(this.data.Username, this.data.Password);
          common.SidePanelTitle();
@@ -141,7 +141,7 @@ let DynamicUserData;
 
      it('TC14 : Verify the Add Attachment section upload file functionality with Valid File', function(){
 
-       const FilePath = 'C:/Automation/cypress/TestFiles/1mb.pdf';
+       const FilePath = 'cypress/fixtures/TestFiles/1mb.pdf';
 
         loginPage.Login(this.data.Username, this.data.Password);
          common.SidePanelTitle();
