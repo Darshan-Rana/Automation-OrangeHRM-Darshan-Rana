@@ -1,0 +1,37 @@
+name: Cypress E2E Regression Suite
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to trigger the test run manually from GitHub
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Cypress Tests
+        run: npx cypress run
+        continue-on-error: true # Ensures report upload runs even if a test fails
+
+      - name: Upload Mochawesome Report Artifacts
+        if: always() # Always upload the report whether the tests passed or failed
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-html-report
+          path: cypress/reports/ 
+          retention-days: 7

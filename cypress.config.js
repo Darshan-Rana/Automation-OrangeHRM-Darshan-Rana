@@ -10,6 +10,7 @@ module.exports = defineConfig({
 
   // Reporter Configuration
   reporter: 'cypress-mochawesome-reporter',
+  reportDir: 'cypress/reports',
   reporterOptions: {
     html: true,
     charts: true,
