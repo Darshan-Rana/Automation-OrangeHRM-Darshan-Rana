@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '18.16.0' # Pinned to bypass the strict node loader error
           cache: 'npm'
 
       - name: Install Dependencies
@@ -33,5 +33,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-html-report
-          path: cypress/reports/ 
+          path: cypress/reports/ # Adjust this path if your mochawesome output folder is named differently
           retention-days: 7
