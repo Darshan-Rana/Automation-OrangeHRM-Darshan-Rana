@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:Order": "npx cypress run --headless --browser firefox --spec 'cypress/e2e/PBPCascadeV2/Masters/ShelfLocation.cy.js,cypress/e2e/PBPCascadeV2/Masters/CustomerControl.cy.js,cypress/e2e/PBPCascadeV2/Masters/BaggingLocation.cy.js,cypress/e2e/PBPCascadeV2/Masters/Incomplate Location.cy.js,cypress/e2e/PBPCascadeV2/Masters/ProductControl.cy.js'",
-    "generate:data": "node cypress/support/DataGenerator/generate_all_data.js"
   },
   "keywords": [],
   "author": "",
